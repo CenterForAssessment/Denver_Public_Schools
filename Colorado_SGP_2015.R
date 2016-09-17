@@ -46,7 +46,7 @@ Colorado_SGP <- abcSGP(
 		simulate.sgps = FALSE,
 		save.intermediate.results=FALSE,
 		outputSGP.output.type=c("LONG_Data", "LONG_FINAL_YEAR_Data", "WIDE_Data"),
-		parallel.config = list(BACKEND="PARALLEL", WORKERS=list(PERCENTILES=20, PROJECTIONS=10, LAGGED_PROJECTIONS=10, SUMMARY=20))) # Ubuntu/Linux
+		parallel.config = list(BACKEND="PARALLEL", WORKERS=list(PERCENTILES=5))) # Ubuntu/Linux
 
 
 ### Fill in ACHIEVEMENT_LEVEL_PRIOR for ELA -- WRITING was the test specified as first prior...
@@ -64,9 +64,7 @@ for (pg in 3:10) {
 ###  Summarize Results
 Colorado_SGP <- summarizeSGP(
 	Colorado_SGP,
-	parallel.config=list(
-		BACKEND="FOREACH", TYPE="doParallel", SNOW_TEST=TRUE,
-		WORKERS=list(SUMMARY=12))
+	parallel.config=list(BACKEND="PARALLEL", WORKERS=list(SUMMARY=12))
 )
 
 
@@ -75,6 +73,7 @@ visualizeSGP(Colorado_SGP,
 	bPlot.years=  "2015",
 	bPlot.content_areas=c("ELA", "MATHEMATICS"),
 	bPlot.anonymize=TRUE)
+
 
 ###  Save 2015 Colorado SGP object
 
