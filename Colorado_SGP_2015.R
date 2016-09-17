@@ -26,13 +26,14 @@ COLO_2015.config <- c(
 
 ###  Winnow out all course progressions with fewer than 2,000 kids (per discussion on 3/14/16)
 
-SGPstateData[["CO"]][["SGP_Configuration"]][["sgp.cohort.size"]] <- 2000
-SGPstateData[["CO"]][["SGP_Configuration"]][["return.norm.group.scale.scores"]] <- TRUE
+SGPstateData[["CO_ORIGINAL"]][["SGP_Configuration"]][["sgp.cohort.size"]] <- 2000
+SGPstateData[["CO_ORIGINAL"]][["SGP_Configuration"]][["return.norm.group.scale.scores"]] <- TRUE
 
 
 ### abcSGP
 
 Colorado_SGP <- abcSGP(
+		state="CO_ORIGINAL",
 		sgp_object=Colorado_Data_LONG,
 		sgp.config = COLO_2015.config,
 		steps=c("prepareSGP", "analyzeSGP", "combineSGP", "outputSGP"),
@@ -46,7 +47,7 @@ Colorado_SGP <- abcSGP(
 		simulate.sgps = FALSE,
 		save.intermediate.results=FALSE,
 		outputSGP.output.type=c("LONG_Data", "LONG_FINAL_YEAR_Data", "WIDE_Data"),
-		parallel.config = list(BACKEND="PARALLEL", WORKERS=list(PERCENTILES=5))) # Ubuntu/Linux
+		parallel.config = list(BACKEND="PARALLEL", WORKERS=list(PERCENTILES=15))) # Ubuntu/Linux
 
 
 ### Fill in ACHIEVEMENT_LEVEL_PRIOR for ELA -- WRITING was the test specified as first prior...
