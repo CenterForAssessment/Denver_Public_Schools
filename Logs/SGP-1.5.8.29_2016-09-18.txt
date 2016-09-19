@@ -1,0 +1,359 @@
+
+Started abcSGP Sunday September 18 07:54:22 2016
+
+
+	abcSGP(
+		 sgp_object = Colorado_Data_LONG
+		state = CO_ORIGINAL
+		steps = c("prepareSGP", "analyzeSGP", "combineSGP", "outputSGP")
+		sgp.percentiles = TRUE
+		sgp.projections = FALSE
+		sgp.projections.lagged = FALSE
+		sgp.percentiles.baseline = FALSE
+		sgp.projections.baseline = FALSE
+		sgp.projections.lagged.baseline = FALSE
+		simulate.sgps = FALSE
+		parallel.config = list(BACKEND = "PARALLEL", WORKERS = list(PERCENTILES = 8))
+		save.intermediate.results = FALSE
+		sgp.config = COLO_2015.config
+		outputSGP.output.type = c("LONG_Data", "LONG_FINAL_YEAR_Data", "WIDE_Data")
+		sgp.percentiles.equated = FALSE )
+
+
+Started prepareSGP Sunday September 18 07:54:22 2016
+
+
+	prepareSGP(
+		 data = sgp_object
+		data_supplementary = data_supplementary
+		state = state
+		var.names = prepareSGP.var.names
+		create.additional.variables = prepareSGP.create.additional.variables )
+
+Finished prepareSGP Sunday September 18 07:54:40 2016 in 18.3 Seconds 
+
+
+Started analyzeSGP Sunday September 18 07:54:41 2016
+
+
+	analyzeSGP(
+		 sgp_object = sgp_object
+		state = state
+		years = years
+		content_areas = content_areas
+		grades = grades
+		sgp.percentiles = sgp.percentiles
+		sgp.projections = sgp.projections
+		sgp.projections.lagged = sgp.projections.lagged
+		sgp.percentiles.baseline = sgp.percentiles.baseline
+		sgp.projections.baseline = sgp.projections.baseline
+		sgp.projections.lagged.baseline = sgp.projections.lagged.baseline
+		sgp.minimum.default.panel.years = sgp.minimum.default.panel.years
+		sgp.use.my.coefficient.matrices = sgp.use.my.coefficient.matrices
+		sgp.test.cohort.size = sgp.test.cohort.size
+		return.sgp.test.results = return.sgp.test.results
+		simulate.sgps = simulate.sgps
+		calculate.simex = calculate.simex
+		calculate.simex.baseline = calculate.simex.baseline
+		goodness.of.fit.print = goodness.of.fit.print
+		sgp.config = sgp.config
+		parallel.config = parallel.config
+		verbose.output = verbose.output
+		get.cohort.data.info = get.cohort.data.info
+		sgp.sqlite = sgp.sqlite
+		sgp.percentiles.equated = sgp.percentiles.equated
+		sgp.percentiles.equating.method = sgp.percentiles.equating.method
+		sgp.percentiles.calculate.sgps = sgp.percentiles.calculate.sgps
+		SGPt = SGPt )
+
+
+Started abcSGP Sunday September 18 07:58:38 2016
+
+
+	abcSGP(
+		 sgp_object = Colorado_Data_LONG
+		state = CO_ORIGINAL
+		steps = c("prepareSGP", "analyzeSGP", "combineSGP", "outputSGP")
+		sgp.percentiles = TRUE
+		sgp.projections = FALSE
+		sgp.projections.lagged = FALSE
+		sgp.percentiles.baseline = FALSE
+		sgp.projections.baseline = FALSE
+		sgp.projections.lagged.baseline = FALSE
+		simulate.sgps = FALSE
+		parallel.config = list(BACKEND = "PARALLEL", WORKERS = list(PERCENTILES = 8))
+		save.intermediate.results = FALSE
+		sgp.config = COLO_2015.config
+		outputSGP.output.type = c("LONG_Data", "LONG_FINAL_YEAR_Data", "WIDE_Data")
+		sgp.percentiles.equated = FALSE )
+
+
+Started prepareSGP Sunday September 18 07:58:38 2016
+
+
+	prepareSGP(
+		 data = sgp_object
+		data_supplementary = data_supplementary
+		state = state
+		var.names = prepareSGP.var.names
+		create.additional.variables = prepareSGP.create.additional.variables )
+
+Finished prepareSGP Sunday September 18 07:58:56 2016 in 18.2 Seconds 
+
+
+Started analyzeSGP Sunday September 18 07:58:58 2016
+
+
+	analyzeSGP(
+		 sgp_object = sgp_object
+		state = state
+		years = years
+		content_areas = content_areas
+		grades = grades
+		sgp.percentiles = sgp.percentiles
+		sgp.projections = sgp.projections
+		sgp.projections.lagged = sgp.projections.lagged
+		sgp.percentiles.baseline = sgp.percentiles.baseline
+		sgp.projections.baseline = sgp.projections.baseline
+		sgp.projections.lagged.baseline = sgp.projections.lagged.baseline
+		sgp.minimum.default.panel.years = sgp.minimum.default.panel.years
+		sgp.use.my.coefficient.matrices = sgp.use.my.coefficient.matrices
+		sgp.test.cohort.size = sgp.test.cohort.size
+		return.sgp.test.results = return.sgp.test.results
+		simulate.sgps = simulate.sgps
+		calculate.simex = calculate.simex
+		calculate.simex.baseline = calculate.simex.baseline
+		goodness.of.fit.print = goodness.of.fit.print
+		sgp.config = sgp.config
+		parallel.config = parallel.config
+		verbose.output = verbose.output
+		get.cohort.data.info = get.cohort.data.info
+		sgp.sqlite = sgp.sqlite
+		sgp.percentiles.equated = sgp.percentiles.equated
+		sgp.percentiles.equating.method = sgp.percentiles.equating.method
+		sgp.percentiles.calculate.sgps = sgp.percentiles.calculate.sgps
+		SGPt = SGPt )
+
+	Started studentGrowthPercentiles: Sunday September 18 07:59:32 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 7, 7, 8, 8, 9  (N=39,690)
+	Finished studentGrowthPercentiles: Sunday September 18 08:04:20 2016 in 4 Minutes, 48 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 07:59:32 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 6, 6, 7, 7, 8  (N=48,224)
+	Finished studentGrowthPercentiles: Sunday September 18 08:06:09 2016 in 6 Minutes, 37 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 07:59:32 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 4, 4, 5, 5, 6  (N=54,014)
+	Finished studentGrowthPercentiles: Sunday September 18 08:06:42 2016 in 7 Minutes, 10 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 07:59:31 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 6, 6, 7, 7, 8, 8, 9  (N=37,863)
+	Finished studentGrowthPercentiles: Sunday September 18 08:07:02 2016 in 7 Minutes, 31 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:06:09 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 8, 8, 9  (N=41,673)
+	Finished studentGrowthPercentiles: Sunday September 18 08:08:02 2016 in 1 Minute, 53 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 07:59:32 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 5, 5, 6, 6, 7  (N=50,898)
+	Finished studentGrowthPercentiles: Sunday September 18 08:08:12 2016 in 8 Minutes, 40 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 07:59:31 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 5, 5, 6, 6, 7, 7, 8  (N=45,663)
+	Finished studentGrowthPercentiles: Sunday September 18 08:08:46 2016 in 9 Minutes, 14 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:06:42 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 7, 7, 8  (N=51,287)
+	Finished studentGrowthPercentiles: Sunday September 18 08:09:31 2016 in 2 Minutes, 49 Seconds
+
+	Started studentGrowthPercentiles Sunday September 18 08:09:32 2016
+		Subject: INTEGRATED_MATH_3, Year: 2015, Grade Progression: 8, 9, 10, EOCT 
+		NOTE: Supplied data together with grade progression contains no data. Check data, function arguments and see help page for details.
+ 	Finished SGP Student Growth Percentile Analysis Sunday September 18 08:09:37 2016 in 5.674 Seconds 
+
+	Started studentGrowthPercentiles Sunday September 18 08:09:38 2016
+		Subject: INTEGRATED_MATH_3, Year: 2015, Grade Progression: 7, 8, 9, EOCT 
+		NOTE: Supplied data together with grade progression contains no data. Check data, function arguments and see help page for details.
+ 	Finished SGP Student Growth Percentile Analysis Sunday September 18 08:09:43 2016 in 5.279 Seconds 
+
+	Started studentGrowthPercentiles: Sunday September 18 07:59:31 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 4, 4, 5, 5, 6, 6, 7  (N=48,595)
+	Finished studentGrowthPercentiles: Sunday September 18 08:09:48 2016 in 10 Minutes, 17 Seconds
+
+	Started studentGrowthPercentiles Sunday September 18 08:09:43 2016
+		Subject: INTEGRATED_MATH_2, Year: 2015, Grade Progression: 8, 9, 10, EOCT 
+		NOTE: Supplied data together with grade progression contains no data. Check data, function arguments and see help page for details.
+ 	Finished SGP Student Growth Percentile Analysis Sunday September 18 08:09:48 2016 in 5.367 Seconds 
+
+	Started studentGrowthPercentiles Sunday September 18 08:09:48 2016
+		Subject: INTEGRATED_MATH_2, Year: 2015, Grade Progression: 7, 8, 9, EOCT 
+		NOTE: Supplied data together with grade progression contains no data. Check data, function arguments and see help page for details.
+ 	Finished SGP Student Growth Percentile Analysis Sunday September 18 08:09:54 2016 in 5.295 Seconds 
+
+	Started studentGrowthPercentiles Sunday September 18 08:09:49 2016
+		Subject: INTEGRATED_MATH_2, Year: 2015, Grade Progression: 6, 7, 8, EOCT 
+		NOTE: Supplied data together with grade progression contains fewer than the minimum cohort size.
+		Only 1618 valid cases provided with 2000 indicated as minimum cohort N size. Check data, function arguments and see help page for details.
+ 	Student Growth Percentile Analysis NOT RUN Sunday September 18 08:09:54 2016 
+
+	Started studentGrowthPercentiles Sunday September 18 08:09:54 2016
+		Subject: INTEGRATED_MATH_1, Year: 2015, Grade Progression: 7, 8, 9, EOCT 
+		NOTE: Supplied data together with grade progression contains fewer than the minimum cohort size.
+		Only 56 valid cases provided with 2000 indicated as minimum cohort N size. Check data, function arguments and see help page for details.
+ 	Student Growth Percentile Analysis NOT RUN Sunday September 18 08:09:59 2016 
+
+	Started studentGrowthPercentiles Sunday September 18 08:09:59 2016
+		Subject: INTEGRATED_MATH_1, Year: 2015, Grade Progression: 5, 6, 7, EOCT 
+		NOTE: Supplied data together with grade progression contains fewer than the minimum cohort size.
+		Only 1230 valid cases provided with 2000 indicated as minimum cohort N size. Check data, function arguments and see help page for details.
+ 	Student Growth Percentile Analysis NOT RUN Sunday September 18 08:10:05 2016 
+
+	Started studentGrowthPercentiles: Sunday September 18 08:07:02 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 6, 6, 7  (N=53,846)
+	Finished studentGrowthPercentiles: Sunday September 18 08:10:09 2016 in 3 Minutes, 7 Seconds
+
+	Started studentGrowthPercentiles Sunday September 18 08:10:05 2016
+		Subject: ALGEBRA_II, Year: 2015, Grade Progression: 8, 9, 10, EOCT 
+		NOTE: Supplied data together with grade progression contains fewer than the minimum cohort size.
+		Only 3 valid cases provided with 2000 indicated as minimum cohort N size. Check data, function arguments and see help page for details.
+ 	Student Growth Percentile Analysis NOT RUN Sunday September 18 08:10:10 2016 
+
+	Started studentGrowthPercentiles Sunday September 18 08:10:10 2016
+		Subject: ALGEBRA_II, Year: 2015, Grade Progression: 7, 8, 9, EOCT 
+		NOTE: Supplied data together with grade progression contains fewer than the minimum cohort size.
+		Only 14 valid cases provided with 2000 indicated as minimum cohort N size. Check data, function arguments and see help page for details.
+ 	Student Growth Percentile Analysis NOT RUN Sunday September 18 08:10:15 2016 
+
+	Started studentGrowthPercentiles: Sunday September 18 08:09:54 2016
+		Content Area: INTEGRATED_MATH_1, Year: 2015, Grade Progression: 6, 7, 8, EOCT  (N=7,452)
+	Finished studentGrowthPercentiles: Sunday September 18 08:10:15 2016 in 20.9 Seconds
+
+	Started studentGrowthPercentiles Sunday September 18 08:10:11 2016
+		Subject: GEOMETRY, Year: 2015, Grade Progression: 8, 9, 10, EOCT 
+		NOTE: Supplied data together with grade progression contains fewer than the minimum cohort size.
+		Only 6 valid cases provided with 2000 indicated as minimum cohort N size. Check data, function arguments and see help page for details.
+ 	Student Growth Percentile Analysis NOT RUN Sunday September 18 08:10:16 2016 
+
+	Started studentGrowthPercentiles Sunday September 18 08:10:16 2016
+		Subject: GEOMETRY, Year: 2015, Grade Progression: 7, 8, 9, EOCT 
+		NOTE: Supplied data together with grade progression contains fewer than the minimum cohort size.
+		Only 212 valid cases provided with 2000 indicated as minimum cohort N size. Check data, function arguments and see help page for details.
+ 	Student Growth Percentile Analysis NOT RUN Sunday September 18 08:10:21 2016 
+
+	Started studentGrowthPercentiles Sunday September 18 08:10:16 2016
+		Subject: ALGEBRA_I, Year: 2015, Grade Progression: 7, 8, 9, EOCT 
+		NOTE: Supplied data together with grade progression contains fewer than the minimum cohort size.
+		Only 296 valid cases provided with 2000 indicated as minimum cohort N size. Check data, function arguments and see help page for details.
+ 	Student Growth Percentile Analysis NOT RUN Sunday September 18 08:10:21 2016 
+
+	Started studentGrowthPercentiles: Sunday September 18 08:10:16 2016
+		Content Area: GEOMETRY, Year: 2015, Grade Progression: 6, 7, 8, EOCT  (N=8,413)
+	Finished studentGrowthPercentiles: Sunday September 18 08:10:38 2016 in 22.5 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:10:21 2016
+		Content Area: ALGEBRA_I, Year: 2015, Grade Progression: 5, 6, 7, EOCT  (N=10,319)
+	Finished studentGrowthPercentiles: Sunday September 18 08:10:51 2016 in 29.9 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:08:03 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 5, 5, 6  (N=56,958)
+	Finished studentGrowthPercentiles: Sunday September 18 08:11:24 2016 in 3 Minutes, 22 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:08:12 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 4, 4, 5  (N=58,078)
+	Finished studentGrowthPercentiles: Sunday September 18 08:11:39 2016 in 3 Minutes, 27 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:10:21 2016
+		Content Area: ALGEBRA_I, Year: 2015, Grade Progression: 6, 7, 8, EOCT  (N=21,925)
+	Finished studentGrowthPercentiles: Sunday September 18 08:11:49 2016 in 1 Minute, 28 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:08:46 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 3, 3, 4  (N=57,058)
+	Finished studentGrowthPercentiles: Sunday September 18 08:12:08 2016 in 3 Minutes, 23 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:04:20 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 3, 3, 4, 4, 5  (N=53,964)
+	Finished studentGrowthPercentiles: Sunday September 18 08:12:21 2016 in 8 Minutes, 1 Second
+
+	Started studentGrowthPercentiles: Sunday September 18 08:11:49 2016
+		Content Area: MATHEMATICS, Year: 2015, Grade Progression: 3, 4  (N=58,615)
+	Finished studentGrowthPercentiles: Sunday September 18 08:14:23 2016 in 2 Minutes, 34 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:10:38 2016
+		Content Area: MATHEMATICS, Year: 2015, Grade Progression: 5, 6, 7, 8  (N=37,994)
+	Finished studentGrowthPercentiles: Sunday September 18 08:14:47 2016 in 4 Minutes, 9 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 07:59:31 2016
+		Content Area: ELA, Year: 2015, Grade Progression: 3, 3, 4, 4, 5, 5, 6  (N=50,346)
+	Finished studentGrowthPercentiles: Sunday September 18 08:15:56 2016 in 16 Minutes, 25 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:11:39 2016
+		Content Area: MATHEMATICS, Year: 2015, Grade Progression: 3, 4, 5  (N=58,305)
+	Finished studentGrowthPercentiles: Sunday September 18 08:17:23 2016 in 5 Minutes, 44 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:10:52 2016
+		Content Area: MATHEMATICS, Year: 2015, Grade Progression: 4, 5, 6, 7  (N=52,029)
+	Finished studentGrowthPercentiles: Sunday September 18 08:18:41 2016 in 7 Minutes, 50 Seconds
+
+	Started studentGrowthPercentiles: Sunday September 18 08:11:25 2016
+		Content Area: MATHEMATICS, Year: 2015, Grade Progression: 3, 4, 5, 6  (N=57,004)
+	Finished studentGrowthPercentiles: Sunday September 18 08:20:35 2016 in 9 Minutes, 11 Seconds
+
+Finished analyzeSGP Sunday September 18 08:20:44 2016 in 21 Minutes, 46 Seconds 
+
+Started combineSGP Sunday September 18 08:20:44 2016
+Finished combineSGP Sunday September 18 08:20:55 2016 in 10.6 Seconds 
+
+
+Started outputSGP Sunday September 18 08:20:55 2016: Files produced from outputSGP saved in 'Data'
+
+
+
+	outputSGP(
+		 sgp_object = sgp_object
+		state = state
+		output.type = outputSGP.output.type
+		outputSGP_SUMMARY.years = years
+		outputSGP_SUMMARY.content_areas = content_areas
+		outputSGP_INDIVIDUAL.years = years
+		outputSGP_INDIVIDUAL.content_areas = content_areas
+		outputSGP.student.groups = intersect(names(sgp_object@Data), subset(sgp_object@Names, names.type == "demographic" & names.output == TRUE, select = names.provided, drop = TRUE)) )
+
+	Started LONG data production in outputSGP Sunday September 18 08:20:55 2016
+	Finished LONG data production in outputSGP Sunday September 18 08:28:56 2016 in 8 Minutes, 1 Second 
+
+	Started LONG FINAL YEAR data production in outputSGP Sunday September 18 08:28:56 2016
+	Finished LONG FINAL YEAR data production in outputSGP Sunday September 18 08:29:29 2016 in 33.1 Seconds 
+
+	Started WIDE data production in outputSGP Sunday September 18 08:29:29 2016
+	Finished WIDE data production in outputSGP Sunday September 18 08:48:46 2016 in 19 Minutes, 18 Seconds 
+
+Finished outputSGP Sunday September 18 08:48:48 2016 in 27 Minutes, 53 Seconds 
+
+Finished abcSGP Sunday September 18 08:48:48 2016 in 50 Minutes, 10 Seconds 
+
+
+Started summarizeSGP Sunday September 18 09:34:32 2016
+
+
+	summarizeSGP(
+		 sgp_object = Colorado_SGP
+		state = CO_ORIGINAL
+		parallel.config = list(BACKEND = "PARALLEL", WORKERS = list(SUMMARY = 12)) )
+
+	Finished with STATE, STATE_ENROLLMENT_STATUS
+	Finished with STATE, CONTENT_AREA, YEAR, STATE_ENROLLMENT_STATUS	Finished with STATE, GENDER, STATE_ENROLLMENT_STATUS
+	Finished with STATE, CONTENT_AREA, GRADE, STATE_ENROLLMENT_STATUS
+
+	Finished with STATE, YEAR, GRADE, STATE_ENROLLMENT_STATUS	Finished with STATE, CONTENT_AREA, GENDER, STATE_ENROLLMENT_STATUS
+
+	Finished with STATE, CONTENT_AREA, YEAR, GRADE, STATE_ENROLLMENT_STATUS	Finished with STATE, YEAR, GENDER, STATE_ENROLLMENT_STATUS
+	Finished with STATE, GRADE, GENDER, STATE_ENROLLMENT_STATUS
+
+	Finished with STATE, ETHNICITY, STATE_ENROLLMENT_STATUS
+	Finished with STATE, YEAR, ETHNICITY, STATE_ENROLLMENT_STATUS
+	Finished with STATE, CONTENT_AREA, ETHNICITY, STATE_ENROLLMENT_STATUS
+	Finished with STATE, GRADE, ETHNICITY, STATE_ENROLLMENT_STATUS
+	Finished with STATE, CONTENT_AREA, YEAR, ETHNICITY, STATE_ENROLLMENT_STATUS
+	Finished with STATE, YEAR, GRADE, GENDER, STATE_ENROLLMENT_STATUS
+	Finished with STATE, CONTENT_AREA, GRADE, GENDER, STATE_ENROLLMENT_STATUS
+	Finished with STATE, CONTENT_AREA, YEAR, GRADE, GENDER, STATE_ENROLLMENT_STATUS

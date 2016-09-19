@@ -51,25 +51,25 @@ Colorado_SGP <- abcSGP(
 
 
 ### Fill in ACHIEVEMENT_LEVEL_PRIOR for ELA -- WRITING was the test specified as first prior...
-for (pg in 3:10) {
+for (pg in 3:8) {
 	Colorado_SGP@Data[which(CONTENT_AREA=="ELA" & YEAR=='2015' & GRADE==pg+1 & VALID_CASE=="VALID_CASE"),
 		ACHIEVEMENT_LEVEL_PRIOR := ordered(findInterval(as.numeric(SCALE_SCORE_PRIOR),
-			SGPstateData[["CO"]][["Achievement"]][["Cutscores"]][["WRITING"]][[paste("GRADE", pg, sep="_")]]),
+			SGPstateData[["CO_ORIGINAL"]][["Achievement"]][["Cutscores"]][["WRITING"]][[paste("GRADE", pg, sep="_")]]),
 			labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced"))]
 }
 
-# Colorado_SGP@Data[YEAR=='2015' & VALID_CASE=="VALID_CASE" & !is.na(ACHIEVEMENT_LEVEL_PRIOR)][, as.list(summary(SCALE_SCORE_PRIOR)), keyby=list(GRADE, ACHIEVEMENT_LEVEL_PRIOR)]
-# Colorado_SGP@Data[YEAR=='2015' & VALID_CASE=="VALID_CASE" & !is.na(ACHIEVEMENT_LEVEL_PRIOR)][, as.list(summary(SCALE_SCORE_PRIOR)), keyby=list(CONTENT_AREA, GRADE, ACHIEVEMENT_LEVEL_PRIOR)]
-
 
 ###  Summarize Results
+
 Colorado_SGP <- summarizeSGP(
 	Colorado_SGP,
+	state="CO_ORIGINAL",
 	parallel.config=list(BACKEND="PARALLEL", WORKERS=list(SUMMARY=12))
 )
 
 
 visualizeSGP(Colorado_SGP,
+	state="CO_ORIGINAL",
 	plot.types = "bubblePlot",
 	bPlot.years=  "2015",
 	bPlot.content_areas=c("ELA", "MATHEMATICS"),
